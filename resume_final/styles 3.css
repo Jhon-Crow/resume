@@ -340,3 +340,28 @@ p {
         width: 45%;
     }
 }
+
+/*JS Slides*/
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 80%;
+    margin: 2px;
+    flex: 5;
+    position: relative;
+    transition: all 900ms ease-in-out;
+}
+
+.slide.active {
+    width: 100%;
+    border-radius: 10px;
+    flex: 20;
+    background-position: center;
+    color: white;
+    background-color: rgba(131, 8, 234, 0.02);
+}
+
