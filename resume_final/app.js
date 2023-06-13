@@ -19,3 +19,15 @@ function slidesPlugin(activeSlide = 1) {
 
 slidesPlugin(0)
 // тут можно указать номер активного элемента
+
+// Кнопка меню--------------------
+const menuBtn = document.querySelector('.btn')
+const menu = document.querySelector('.navbar')
+
+menuBtn.addEventListener('click', () => {
+ if (menu.classList.contains('shown')){
+    menu.classList.remove('shown')
+ } else {
+    menu.classList.add('shown')
+ }
+ })
